@@ -34,7 +34,7 @@ function draw() {
   background(0);
   
   boy.x=World.mouseX;// boy moviéndose en el eje X con el mouse
-  //moveboy();
+ 
   
   edges= createEdgeSprites();
   boy.collide(edges[3]);// colisión de boy con los límites derecho e izquierdo invisibles 
@@ -48,12 +48,3 @@ function draw() {
   
   drawSprites();
 }
-
-/*function moveboy(){//temporal
-  if(keyDown("left_arrow")){
-    boy.x=boy.x -5;
-  }
-  if (keyDown("right_arrow")){
-    boy.x=boy.x +5;
-  }
-}*/
